@@ -12,10 +12,10 @@ export const nowPlayingAction = async () => {
 
   const movies = data.results.map(MovieMapper.fromTheMovieDbToMovie);
 
-  console.log(movies);
+ // console.log(movies);
 
   
-   return []
+   return movies
   } catch (error) {
     console.error(error);
     throw 'Error fetching now playing movies';
