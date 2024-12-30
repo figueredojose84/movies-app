@@ -5,13 +5,8 @@ import {
 } from '@tanstack/react-query'
 // Import your global CSS file
 import "../global.css";
-import { View,Text } from "react-native";
 import { nowPlayingAction } from "@/core/actions/movies/now-playing.action";
-
-
 const queryClient = new QueryClient()
-
-
 
 const RootLayout = () => {
   nowPlayingAction();
